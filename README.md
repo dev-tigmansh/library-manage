@@ -2,7 +2,7 @@
 
 A simple command-line program written in Python that lets a user manage a small library — view books, add new ones, issue them, and return them. Everything runs in a terminal using a menu the user picks from by typing a number.
 
-// What it does
+// What it does:
 
 When you run the program, you get a menu with five options:
 
@@ -14,7 +14,7 @@ When you run the program, you get a menu with five options:
 
 The menu keeps showing up in a loop until option 5 is chosen.
 
-// How the data is stored
+// How the data is stored:
 
 The library is just a Python list of lists. Each book is stored as:
 
@@ -36,7 +36,7 @@ There's no database or file involved — everything lives in memory while the pr
 | 102 | 1984                    | George Orwell          | Available |
 | 103 | The Great Gatsby        | F. Scott Fitzgerald    | Issued    |
 
-// Running it
+// Running it:
 
 You just need Python 3 installed. Then run:
 
@@ -46,13 +46,13 @@ python library.py
 
 (or whatever you've named the file), and follow the on-screen menu.
 
-//  Notes/things to keep in mind
+//  Notes/things to keep in mind:
 
 - Book IDs are expected to be whole numbers — entering text where an ID is expected will crash the program, since there's no input validation.
 - Issuing/returning is matched purely by Book ID, so IDs should be unique when adding new books (the program doesn't currently check for duplicates).
 - Data isn't saved anywhere — once you exit, everything resets back to the original three books next time you run it.
 
-// Possible improvements
+// Possible improvements:
 
 - Input validation (e.g., handling non-numeric IDs gracefully instead of crashing).
 - Checking for duplicate IDs when adding a book.
